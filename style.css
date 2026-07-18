@@ -1,8 +1,8 @@
 /* CSS部分：フェードアウトの動き */
 .log-cmd {
     color: #0f0;
-    padding: 5px;
-    margin: 5px 0;
+    padding: 0px;
+    margin: 0px 0;
     transition: opacity 1s ease;
     /* 1秒かけて不透明度を変化させる */
     opacity: 1;
@@ -27,7 +27,57 @@
     opacity: 1;
 }
 
+/* インプット欄のスタイル */
+/** シンプルでハッカーぽい感じ*/
+.cli {
+    width: 100%;
+    max-width: 500px;
+    padding: 3px 3px;
 
+    background: #050505;
+    color: #00ff66;
+
+    /* border: 2px solid #00ff66; */
+    /* border-radius: 2px; */
+
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    outline: none;
+
+    transition: all 0.25s ease;
+
+    box-shadow:
+        inset 0 0 8px rgba(0,255,100,.2),
+        0 0 8px rgba(0,255,100,.3);
+}
+
+.cli::placeholder {
+    color: rgba(0,255,100,.45);
+}
+
+.cli:focus {
+    border-color: #00ff99;
+
+    box-shadow:
+        inset 0 0 12px rgba(0,255,120,.35),
+        0 0 10px rgba(0,255,120,.6),
+        0 0 25px rgba(0,255,120,.45);
+
+    text-shadow: 0 0 6px #00ff88;
+}
+
+.cli:hover {
+    box-shadow:
+        inset 0 0 10px rgba(0,255,120,.3),
+        0 0 12px rgba(0,255,120,.45);
+}
+
+.cli::selection {
+    background: #00ff66;
+    color: #000;
+}
 
 .fade-out {
     opacity: 0;

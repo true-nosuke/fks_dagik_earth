@@ -14,10 +14,13 @@
     }
     </script> 
 <!-- コマンド結果などを表示するエリア -->
-<div id="output" style="position: absolute; bottom: 40px; left: 10px; z-index: 1000; color: white; font-family: monospace;"></div>
+<div id="output" style="position: absolute; bottom: 65px; left: 10px; z-index: 1000; color: white; font-family: monospace;"></div>
+
 
 <!-- CLI Input -->
-<input type="text" id="cli" placeholder="Enter command" style="position: absolute; bottom: 10px; z-index: 1000; width: 200px;" autofocus>
+<input type="text" id="cli" class="cli" placeholder="Enter command" style="position: absolute; bottom: 10px; left: 10px; z-index: 1000; width: 200px;" autofocus>
+<!--予測欄-->
+<div id="suggestions" style="position: absolute; bottom: 50px; left: 10px; z-index: 1000; color: gray; font-family: monospace;">cmd</div>
 
 </head>
 <body>
