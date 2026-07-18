@@ -1,0 +1,45 @@
+/* CSS部分：フェードアウトの動き */
+.log-cmd {
+    color: #0f0;
+    padding: 5px;
+    margin: 5px 0;
+    transition: opacity 1s ease;
+    /* 1秒かけて不透明度を変化させる */
+    opacity: 1;
+}
+
+/* エラーメッセージ*/
+.log-error {
+    color: #f00;
+    padding: 5px;
+    margin: 5px 0;
+    transition: opacity 1s ease;
+    /* 1秒かけて不透明度を変化させる */
+    opacity: 1;
+}
+/*メッセージ*/
+.log-message {
+    color: #fff;
+    padding: 5px;
+    margin: 5px 0;
+    transition: opacity 1s ease;
+    /* 1秒かけて不透明度を変化させる */
+    opacity: 1;
+}
+
+
+
+.fade-out {
+    opacity: 0;
+    /* 透明にする */
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+}
+
+canvas {
+    display: block;
+}
