@@ -91,3 +91,10 @@ window.addEventListener("resize",()=>{
     renderer.setSize(window.innerWidth,window.innerHeight);
 
 });
+
+export function changeTexture(texturePath) {
+    const newTexture = loader.load(texturePath);
+    newTexture.colorSpace = THREE.SRGBColorSpace;
+    material.map = newTexture;
+    material.needsUpdate = true;
+}
